@@ -95,7 +95,7 @@ if __name__ == '__main__':
     		tot_loss += loss.detach()
     		loss.backward()
 
-    		if batch_index % ... = 0:
+    		if batch_index % ... == 0:
     			pw.add_loss_vs_batch({'loss': tot_loss / ..., ...}, batch_index, False)
     			pw.add_model_parameter_stats(model, batch_index, save=True)
     			optimizer.step()
